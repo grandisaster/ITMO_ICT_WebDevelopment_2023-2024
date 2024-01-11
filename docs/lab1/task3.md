@@ -5,7 +5,7 @@
 
 
 ### index.html 
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,9 +16,10 @@
     <h1>Hello, clients and servers!</h1>
 </body>
 </html>
-
+```
 
 ### client.py
+```python
 import socket
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -35,9 +36,9 @@ while True:
     print(data.decode("utf-8"))
 
 sock.close()
-
+```
 ### server.py
-
+```python
 import socket
 
 conn = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -65,3 +66,6 @@ while True:
 
     send_response(sock)
     sock.close()
+```
+
+![Задание3](img/task3.png)

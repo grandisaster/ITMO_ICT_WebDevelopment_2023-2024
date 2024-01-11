@@ -5,6 +5,7 @@
 клиенту. Вариант: Поиск площади трапеции.
 
 ### client.py
+```python
 import socket
 import json
 
@@ -24,8 +25,10 @@ data = conn.recv(1024)
 print("Площадь трапеции: " + data.decode("utf-8"))
 
 conn.close()
-
+```
 ### server.py
+
+```python
 
 import socket 
 import json
@@ -50,5 +53,5 @@ while True:
     connect.send(str(trapez_area_count(**vars)).encode("utf-8"))
 
 connect.close()
-
-[Задание2](task2.png)
+```
+![Задание2](img/task2.png)

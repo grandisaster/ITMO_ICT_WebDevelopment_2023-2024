@@ -4,6 +4,7 @@
 баллов. Обязательно использовать библиотеку threading.
 
 ### client.py
+```python
 import socket
 from threading import Thread
 
@@ -34,8 +35,9 @@ rec_thread.start()
 
 client.send(username.encode('utf-8'))
 respond()
-
+```
 ### server.py
+```python
 
 import socket
 from threading import Thread
@@ -95,5 +97,5 @@ def connect():
 
 
 connect()
-
-[Задание4](task4.png)
+```
+![Задание4](img/task4.png)

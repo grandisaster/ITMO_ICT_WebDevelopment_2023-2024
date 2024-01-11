@@ -3,7 +3,7 @@
 запросов средствами Python и библиотеки socket. (PostMan)
 
 ### server.py
-
+```python
 import socket
 from email.parser import Parser
 from urllib.parse import parse_qs, urlparse
@@ -184,5 +184,5 @@ class Response:
 if __name__ == '__main__':
     serv = MyHTTPServer('localhost', 7777)
     serv.inf_serve()
-
-[Задание5](task5.png)
+```
+![Задание5](img/task5.png)

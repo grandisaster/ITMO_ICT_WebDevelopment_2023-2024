@@ -7,6 +7,7 @@
 Реализовать с помощью протокола UDP
 
 ### client.py
+```python
 import socket
 
 conn = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -20,9 +21,9 @@ data = conn.recv(1024)
 print(data.decode("utf-8"))
 
 conn.close()
-
+```
 ### server.py
-
+```python
 import socket
 
 conn = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -35,5 +36,5 @@ print(data.decode("utf-8"))
 conn.sendto(b"Hello, client", address)
 
 conn.close()
-
-[Задание1](task1.png)
+```
+![Задание1](img/task1.png)
